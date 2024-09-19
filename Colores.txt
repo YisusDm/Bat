@@ -1,0 +1,17 @@
+@echo off
+
+set a=0 
+set b=9
+:inicio
+
+color %a%%b%
+set /a a=%a%+1
+set /a b=%b%-1
+if %a% gtr 9 set a=0
+if %b% lss 1 set b=9
+
+echo nbcvbnm,.-m.nbvcxbnm,.-mnbvcxbnm,.-mnbvcxzvbnm,.fdghjklñ{}
+echo 4446546354654654646546465464646546546546546549687968435164
+
+
+goto inicio

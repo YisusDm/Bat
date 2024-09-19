@@ -1,0 +1,28 @@
+@echo off
+title MENU UTILIDADES
+color 0a
+
+:start
+cls
+echo 1. Panel de control
+echo 2. Joystick
+echo 3. Pag
+echo 4. Exit
+echo.
+set /p option=Elija una opcion: 
+
+if %option% equ 1 goto cpanel
+if %option% equ 2 goto joy
+if %option% equ 3 goto pag
+if %option% equ 4 goto eof
+if %option% neq 4 goto start
+
+:cpanel
+control
+goto start
+:joy
+joy.cpl
+goto start
+:pag
+Start chrome /incognito https://www.youtube.com/watch?v=MHhYSRbrOlQ
+goto start

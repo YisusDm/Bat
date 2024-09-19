@@ -1,0 +1,4 @@
+@echo off
+set /p tiempo=Escriba el tiempo de apagado en segundos: 
+set /p mensaje=Escriba el mensaje para el usuario:  
+shutdown -s -t %tiempo% -c %mensaje%
